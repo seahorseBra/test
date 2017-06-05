@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background-color: #999999;
+    display: block;
+}
+#wrapper{
+    display: block;
+    width: 1239px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: #efefef;
+    height: 100%;
+}
+#head_word{
+    font-size: 300%;
+    line-height: 90px;
+    margin-top: 10px;
+}
+#title{
+    width: 1210px;
+    height: 100px;
+}
+#ad_head{
+    float: right;
+    width: 728px;
+    height: 90px;
+    background-color: #efefef;
+    margin-top: 10px;
+}
+#footer{
+    clear: both;
+}
+
+#navlist{
+    float: left;
+    width: 180px;
+    border-right:#888888 1px solid;
+}
+
+
+
