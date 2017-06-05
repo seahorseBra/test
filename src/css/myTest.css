@@ -10,6 +10,8 @@ body{
     margin: 0 auto;
     background-color: #efefef;
     height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 #head_word{
     font-size: 300%;
@@ -34,7 +36,26 @@ body{
 #navlist{
     float: left;
     width: 180px;
-    border-right:#888888 1px solid;
+    border:#888888 1px solid;
+}
+
+#navlist li{
+    list-style: none;
+}
+
+#navlist a{
+    text-decoration: none;
+    color: #333;
+}
+
+#navlist li:hover{
+    text-decoration: none;
+    background-color: #888888;
+}
+#content{
+    float: left;
+    padding: 20px;
+
 }
 
 
