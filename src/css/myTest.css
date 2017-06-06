@@ -1,62 +1,228 @@
-body{
+body {
     text-align: center;
     background-color: #999999;
-    display: block;
+    margin: 0;
 }
-#wrapper{
-    display: block;
+
+#wrapper {
     width: 1239px;
     text-align: left;
     margin: 0 auto;
-    background-color: #efefef;
+    background-color: #ffffff;
     height: 100%;
     padding-left: 5px;
     padding-right: 5px;
 }
-#head_word{
+
+#head_word {
     font-size: 300%;
     line-height: 90px;
-    margin-top: 10px;
+    width: 300px;
+    display: inline;
 }
-#title{
+
+#title {
     width: 1210px;
     height: 100px;
+    display: block;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
-#ad_head{
+
+#ad_head {
     float: right;
     width: 728px;
     height: 90px;
     background-color: #efefef;
-    margin-top: 10px;
+    display: inline;
 }
-#footer{
+
+#footer {
     clear: both;
 }
 
-#navlist{
+#hor_nav {
+    display: block;
+    background-color: #e8e7e3;
+    margin-bottom: 5px;
+}
+
+#hor_nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#hor_nav li {
+    float: left;
+}
+
+#hor_nav a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    font-size: 200%;
+    text-align: center;
+    color: #7e7e7d;
+    padding: 1px;
+    margin: 1px;
+}
+
+#hor_nav a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#navlist {
     float: left;
     width: 180px;
-    border:#888888 1px solid;
+    border: #888888 1px solid;
 }
 
-#navlist li{
-    list-style: none;
+#navlist ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#navlist a{
+#navlist a {
     text-decoration: none;
     color: #333;
+    line-height: 30px;
+    padding: 4px;
+    display: block;
 }
 
-#navlist li:hover{
+#navlist a:hover {
     text-decoration: none;
     background-color: #888888;
 }
-#content{
-    float: left;
-    padding: 20px;
 
+#content {
+    float: left;
+    width: 850px;
+    margin: 0;
 }
+
+#content p {
+    border: #888888 solid 1px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#tools {
+    float: left;
+    width: 180px;
+    border: #e8e7e3 solid 1px;
+    border-top: none;
+    text-align: center;
+}
+
+#tools button {
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    color: #333333;
+    font-size: 16px;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#tools_tool {
+    background-color: #a7dd94;
+}
+
+#tools_lab {
+    background-color: #d9bbe7;
+}
+
+#tools_test {
+    background-color: #e8b091;
+}
+
+#tools_tool:hover {
+    background-color: #bcffac;
+}
+
+#tools_lab:hover {
+    background-color: #f1d1ff;
+}
+
+#tools_test:hover {
+    background-color: #ffc4a2;
+}
+
+#gallery {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery_img {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/aaa.jpg");
+    text-align: center;
+    position: relative;
+}
+
+#gallery div[title="bg"] {
+    width: 80%;
+    height: 80%;
+    background-color: #888888;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+    border-radius: 5px;
+    margin: auto auto;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+/*khuw*/
+#gallery div[title="word"]{
+    margin: auto auto;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: -50px;
+}
+
+#gallery div p{
+    color: #ffffff;
+    background-color: transparent;
+    margin: auto auto;
+    font-size: 200%;
+    border: none;
+}
+
+#gallery div:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.progress_bar{
+    background-color: #999999;
+    border-radius: 6px;
+    border: #999999 solid 1px;
+    height: 10px;
+    width: 600px;
+    margin: 40px;
+}
+.progress_bar::-webkit-progress-bar{
+    background-color: #999999;
+}
+
+.progress_bar::-webkit-progress-value{
+    background:-ms-linear-gradient(top, #005717,  #00f807);        /* IE 10 */
+    background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#005717), to(#00f807));
+}
+
+
 
 
 
