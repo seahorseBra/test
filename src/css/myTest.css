@@ -162,6 +162,7 @@ body {
     width: 250px;
     height: 250px;
     background-image: url("../img/aaa.jpg");
+    background-size: 250px 250px;
     text-align: center;
     position: relative;
 }
@@ -198,6 +199,7 @@ body {
     margin: auto auto;
     font-size: 200%;
     border: none;
+    word-wrap: break-word;
 }
 
 #gallery div:hover {
@@ -222,6 +224,15 @@ body {
     background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#005717), to(#00f807));
 }
 
+.border-ra{
+    margin: 40px;
+    background-color: #999999;
+    border: 2px solid #555555;
+    border-radius: 40px;
+    -moz-border-radius: 25px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #888888;
+}
 
 
 
