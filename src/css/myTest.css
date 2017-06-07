@@ -222,9 +222,16 @@ body {
 .progress_bar::-webkit-progress-value{
     background:-ms-linear-gradient(top, #005717,  #00f807);        /* IE 10 */
     background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#005717), to(#00f807));
+    transition: width 300ms;
 }
 
 .border-ra{
+    /*perspective: 500px;*/
+    /*-webkit-perspective: 500px;*/
+}
+#bu{
+    width: 100px;
+    height: 20px;
     margin: 40px;
     background-color: #999999;
     border: 2px solid #555555;
@@ -232,7 +239,44 @@ body {
     -moz-border-radius: 25px;
     text-align: center;
     box-shadow: 5px 5px 5px #888888;
+    /*transform: translate(10px, 10px);*/
+    /*transform: scale(2,2);*/
+    /*transform: skew(40deg, 40deg);*/
+    /*transform: matrix(0.866,0.5,-0.5,0.866,0,0);*/
+    /*transition: transform 2s;*/
+    /*transition-property: transform;*/
+    /*transition-duration: 300ms;*/
+    /*transition-timing-function: ease-out;*/
 }
+#bu:hover{
+    /*transform: rotate(45deg);*/
+    /*backface-visibility: hidden;*/
+    /*transform: scale(1.1,1.1);*/
+
+    /*animation-fill-mode: both;*/
+    animation: myfirst 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes myfirst {
+    from{width: 100px; background-color: #999999}
+    to{width: 200px; background-color: #bd2d30}
+}
+#in{
+    width: 300px;
+    height: 60px;
+    overflow: auto;
+    resize: both;
+    padding: 10px;
+    border: 2px solid;
+}
+#in_put{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 
 

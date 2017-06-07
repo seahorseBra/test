@@ -6,6 +6,17 @@
 
     <link rel="stylesheet" href="css/myTest.css">
     <script src="js/test.js"></script>
+    <script type="text/javascript" src="jQuery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $("h1").hide();
+            });
+        });
+    </script>
+</head>
+
 </head>
 <body>
 <div id="wrapper">
@@ -60,7 +71,16 @@
         </div>
         <p>CSS浮动</p>
         <progress class="progress_bar" value="50" max="100" onclick="changeProgress(this)"></progress>
-        <div class="border-ra">圆角矩形</div>
+        <div class="border-ra">
+            <div id="bu">圆角矩形</div>
+        </div>
+        <div id="in">
+            <input  id="in_put" placeholder="随便输入点">
+        </div>
+
+        <div>
+            <h1>This is aiwejga</h1>
+        </div>
         <p>CSS浮动</p>
         <p>CSS浮动</p>
         <p>CSS浮动</p>
