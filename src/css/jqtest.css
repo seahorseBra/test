@@ -1,0 +1,33 @@
+/*p{*/
+    /*color: #ffffff;*/
+    /*width: 200px;*/
+    /*height: 50px;*/
+    /*background-color: #00f807;*/
+    /*text-align: center;*/
+    /*position: relative;*/
+    /*margin: 0px;*/
+/*}*/
+
+.card{
+    color: #005717;
+    background-color: #888888;
+}
+
+.cc{
+    background-color: #FF0099;
+    color: #f9f;
+    font-weight: bold;
+}
+
+.dd{
+    background-color: #005717;
+}
+
+
+img{
+    width: 350px;
+}
+
+.ee{
+    color: #00f807;
+}

@@ -1,0 +1,1 @@
+<div class="cc">这是ajax替换的页面</div>
