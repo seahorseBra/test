@@ -14,6 +14,8 @@ $(document).ready(function () {
     //         $("p.cc").css("background-color", "white").css();
     //     }
     // })
+
+
     var x;
     $("#btn").click(function () {
         var dd = $("p.cc");
@@ -42,6 +44,7 @@ $(document).ready(function () {
     $("#btn5").click(function () {
         var dd = $("#changdiv");
 
+        // dd.get("ajaxtest.txt");
         // 请求xml数据
         // dd.load("ajaxtest2.xml", function (response, status) {
         //     if(status == "success"){
@@ -54,16 +57,27 @@ $(document).ready(function () {
         // });
 
         // 请求JSON数据
-        $.get({url:"ajaxtest3.js", dataType:"json",success:function (data,status,xhr) {
-                if(status == "success"){
-                    var ool = dd.html("<ol></ol>");
+        // $.get({url:"ajaxtest3.js", dataType:"json",success:function (data,status,xhr) {
+        //         if(status == "success"){
+        //             var ool = dd.html("<ol></ol>");
+        //
+        //             $.each(data, function (i, field) {
+        //                 $("<li></li>").addClass("ee").html(field.name).add("<b>kauiweg</b>").appendTo("ol");
+        //             })
+        //         }
+        // }})
 
-                    $.each(data, function (i, field) {
-                        $("<li></li>").addClass("ee").html(field.name).add("<b>kauiweg</b>").appendTo("ol");
-                    })
-                }
-        }})
+        var xmlhttp;
+        if(window.XMLHttpRequest){
+            xmlhttp = new XMLHttpRequest();
+        }else {
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
 
+
+        xmlhttp.open("GET", "ajaxtest.txt", false);
+        xmlhttp.send();
+        dd.html(xmlhttp.responseText)
     })
 })
 
