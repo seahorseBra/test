@@ -14,8 +14,6 @@ $(document).ready(function () {
     //         $("p.cc").css("background-color", "white").css();
     //     }
     // })
-
-
     var x;
     $("#btn").click(function () {
         var dd = $("p.cc");
@@ -32,7 +30,7 @@ $(document).ready(function () {
     $("#btn3").click(function () {
         var dd = $("p");
         dd.toggleClass(function () {
-            if($(this).index()%2 == 1){
+            if ($(this).index() % 2 == 1) {
                 return $(this).class;
             }
         });
@@ -57,6 +55,10 @@ $(document).ready(function () {
         // });
 
         // 请求JSON数据
+        // $.get({
+        //     url: "ajaxtest3.js", dataType: "json", success: function (data, status, xhr) {
+        //         if (status == "success") {
+        //             var ool = dd.html("<ol></ol>");
         // $.get({url:"ajaxtest3.js", dataType:"json",success:function (data,status,xhr) {
         //         if(status == "success"){
         //             var ool = dd.html("<ol></ol>");
@@ -67,17 +69,30 @@ $(document).ready(function () {
         //         }
         // }})
 
+        //         $.each(data, function (i, field) {
+        //             $("<li></li>").addClass("ee").html(field.name).add("<b>kauiweg</b>").appendTo("ol");
+        //         })
+        //     }
+        // }
+
+        //使用ajax请求数据
         var xmlhttp;
-        if(window.XMLHttpRequest){
+        if (window.XMLHttpRequest) {
             xmlhttp = new XMLHttpRequest();
-        }else {
+        } else {
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-
-
         xmlhttp.open("GET", "ajaxtest.txt", false);
         xmlhttp.send();
         dd.html(xmlhttp.responseText)
+
+    })
+
+    $("#nav").click(function () {
+        $("#nav_line1").toggleClass("nav_line1");
+        $("#nav_line2").toggleClass("nav_line2");
+        $("#nav_line3").toggleClass("nav_line3");
+
     })
 })
 
